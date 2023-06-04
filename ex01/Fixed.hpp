@@ -9,12 +9,11 @@ class Fixed {
 		static const int _bit = 8;
 	public:
 		Fixed();
+		Fixed( const int value );
+		Fixed( const float value );
 		~Fixed();
-		// copy construct
-		Fixed( const Fixed &num );
-		int getRawBits( void ) const;
-		void setRawBits( int const raw );
-		Fixed &operator=( const Fixed &value );
+		float toFloat( void ) const;
+		int toInt( void ) const;
 };
 
 #endif
