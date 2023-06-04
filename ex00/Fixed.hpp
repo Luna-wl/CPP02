@@ -12,9 +12,9 @@ class Fixed {
 		~Fixed();
 		// copy construct
 		Fixed( const Fixed &num );
-		Fixed &operator=( const Fixed &copy );
 		int getRawBits( void ) const;
 		void setRawBits( int const raw );
+		Fixed &operator=( const Fixed &value );
 };
 
 #endif

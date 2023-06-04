@@ -23,10 +23,9 @@ void Fixed::setRawBits( int const raw ) {
 	this->_value = raw;
 	std::cout << "setRawBits member function called" << std::endl;
 }
-// to copy objects of the same class
-// c = b
-Fixed &Fixed::operator=( const Fixed &copy ) { 
+
+Fixed &Fixed::operator=( const Fixed &value ) {
 	std::cout << "Copy assignment operator called" << std::endl;
-	this->_value = copy.getRawBits();
+	this->_value = getRawBits();
 	return *this;
 }
