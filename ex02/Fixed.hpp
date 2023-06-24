@@ -21,6 +21,10 @@ class Fixed {
 		int toInt( void ) const;
 
 		Fixed &operator=( const Fixed &value );
+		Fixed &operator++();
+		Fixed &operator--();
+		Fixed operator--( int );
+		Fixed operator++( int );
 
 		bool operator>( const Fixed &fixed ) const;
 		bool operator<( const Fixed &fixed ) const;
@@ -29,7 +33,10 @@ class Fixed {
 		bool operator==( const Fixed &fixed ) const;
 		bool operator!=( const Fixed &fixed ) const;
 
-		Fixed operator+(const Fixed& fixed) const;
+		Fixed operator+(const Fixed& num) const;
+		Fixed operator*(const Fixed& num) const;
+		Fixed operator-(const Fixed& num) const;
+		Fixed operator/(const Fixed& num) const;
 
 		static Fixed &max( Fixed &num1, Fixed &num2 );
 		const static Fixed &max( const Fixed &num1, const Fixed &num2 );
