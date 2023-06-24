@@ -1,7 +1,6 @@
 #include "Fixed.hpp"
 
-Fixed::Fixed() {
-	this->_fixvalue = 0;
+Fixed::Fixed() : _fixvalue(0) {
 	std::cout << "Default constructor called" << std::endl;
 }
 
